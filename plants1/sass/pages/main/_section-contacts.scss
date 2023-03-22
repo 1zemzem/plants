@@ -1,0 +1,92 @@
+.section-contacts {
+    background-color: $color-bg-section;
+    padding-top: 60px;
+
+
+    @include media-tablet {
+        flex-direction: column;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    @include media-mobile {
+        flex-direction: column;
+        height: auto;
+        padding-top: 25px;
+    }
+
+    &__wrapper {
+        background: url("../src/img/contact_woman1.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        background-position: left 10% bottom;
+
+        @include media-tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 739px;
+            background-size: 200px auto;
+            background-position: left 52% bottom;
+        }
+
+        @include media-mobile {
+            background-size: 100px auto;
+            background-position: left 50% bottom;
+            min-height: 600px;
+
+            &-active {
+                background: none;
+            }
+        }
+    }
+
+    &-layout {
+        display: flex;
+
+        @include media-tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        margin-right: 64px;
+
+        @include media-tablet {
+            margin-right: 0;
+        }
+
+        @include media-mobile {
+            font-size: 25px;
+            line-height: 33px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__select {
+        margin: 89px 0 352px 0;
+        width: 450px;
+        height: 50px;
+
+        @include media-tablet-wide {
+            width: 380px;
+            margin: 98px 0 498px 0;
+        }
+
+        @include media-small {
+            margin: 80px 0 256px 0;
+            width: 300px;
+            height: 50px;
+            padding: 0 24px 0 20px;
+        }
+    }
+}

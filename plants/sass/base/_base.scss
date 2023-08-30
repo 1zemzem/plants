@@ -1,0 +1,99 @@
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: inter, 'serif', 'sans-serif';
+	font-weight: 400;
+}
+
+body.noscroll {
+	overflow: hidden;
+}
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+textarea {
+	appearance: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+ul,
+ol {
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 50px;
+	color: $color-grey;
+}
+
+h2 {
+	font-family: 'Inika';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 52px;
+	color: $color-green;
+}
+
+h3 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	text-align: right;
+	color: $color-black;
+}
+
+h4 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: $color-orange;
+}
+
+h5 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	color: $color-black;
+}
